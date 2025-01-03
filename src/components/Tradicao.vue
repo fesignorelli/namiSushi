@@ -34,7 +34,7 @@
   align-items: center;
 
 
-  
+
   background-color: rgba(23, 60, 28, 0.8);
   /* Fundo escuro com transparência */
   color: white;
@@ -65,6 +65,24 @@ p {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .overlay {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 1vh;
+  }
+
   h1 {
     font-size: 1.5rem;
   }

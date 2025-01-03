@@ -98,6 +98,14 @@ export default {
 }
 
 @media (max-width: 480px) {
+
+    .image-content {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        align-items: center;
+    }
+
     .text-content {
         align-items: center;
         text-align: center;
