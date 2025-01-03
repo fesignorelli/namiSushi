@@ -84,6 +84,7 @@ p {
   }
 
   h1 {
+    width: 70vh;
     font-size: 1.5rem;
   }
 

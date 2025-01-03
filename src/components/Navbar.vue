@@ -154,9 +154,10 @@ body {
 }
 
 @media (max-width: 480px) {
+
   .hamburger {
     display: flex;
-    translate: 10rem;
+    translate: 20rem;
   }
 }
 </style>
