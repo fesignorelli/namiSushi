@@ -6,6 +6,11 @@ export default {
 
 <template>
     <main class="main-content">
+
+        <div class="image-content">
+            <img src="../assets//imagens/logoBanner.png" alt="Sushi" />
+        </div>
+
         <div class="text-content">
             <h1>
                 um bom <span class="highlight">sushi</span>, <br />
@@ -14,48 +19,46 @@ export default {
             <p>Está com fome? Acabe com ela já! Veja agora seu cardápio:</p>
             <button class="menu-button">clique aqui:</button>
         </div>
-        <div class="image-content">
-            <img src="../assets//imagens/logoBanner.png" alt="Sushi" />
-        </div>
+
     </main>
 </template>
 
 
 
 <style scoped>
-
 .main-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top: 5rem;
-    flex-wrap: wrap;
+    gap: 20vh;
+    margin-top: 5%;
 }
 
 .text-content {
+    font-family: 'Times New Roman', Times, serif;
     text-align: left;
-    max-width: 50%;
 }
 
 .text-content h1 {
-    color: #fff;
+    color: #000;
     font-size: 3rem;
     line-height: 1.5;
 }
 
 .text-content .highlight {
-    color: #8b8b56;
+    color: #173c1c;
     font-weight: bold;
 }
 
 .text-content p {
-    color: #fff;
+    color: #000;
     font-size: 1.6rem;
+    width: 60%;
     font-weight: 500;
 }
 
 .menu-button {
-    background-color: #8b8b56;
+    background-color: #173c1c;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -71,42 +74,52 @@ export default {
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        gap: 20px;
     }
 
     .text-content {
-        max-width: 100%;
-        margin-bottom: 20px;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        font-size: 3vh;
+        max-width: 70%;
     }
 
     .image-content img {
-        max-width: 80%;
-        margin: 0 auto;
+        max-width: 50%;
     }
 }
 
 @media (max-width: 480px) {
-    .header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .header .icons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
+    .text-content {
+        align-items: center;
+        text-align: center;
     }
 
     .text-content h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .text-content p {
-        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.3rem;
+        width: 70%;
     }
 
     .menu-button {
-        font-size: 0.9rem;
+        translate: 0 2vh;
+        font-size: 1.5rem;
         padding: 8px 16px;
     }
 }

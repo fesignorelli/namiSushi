@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #fffdf5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,6 +20,12 @@ a {
 }
 a:hover {
   color: #535bf2;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding seja contabilizado no tamanho total */
 }
 
 body {
@@ -58,12 +64,6 @@ button:focus-visible {
   padding: 2em;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
